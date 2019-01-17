@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post!, only: [:show, :edit, :update]
 
   def show
-    set_post!
+    @post = set_post!
   end
 
   def edit
